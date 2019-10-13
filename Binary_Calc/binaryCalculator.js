@@ -22,7 +22,13 @@ document.getElementById("res").innerHTML="";
 document.getElementById("btnEql").onclick=function()
 {
 var expression=document.getElementById("res").innerHTML;
+
+if(!(expression.match(/^([01]+)([\+\-\*\/])([01]+)$/)))
+document.getElementById("res").innerHTML="Invalid Expression => Press Clear";
+  
+else{
 let exp_arr=expression.match(/([01]+)([\+\-\*\/])([01]+)/);
 let result=parseInt(exp_arr[1],2)+exp_arr[2]+parseInt(exp_arr[3],2);
 document.getElementById("res").innerHTML=Math.floor(eval(result)).toString(2);
+}
 };
