@@ -1,0 +1,35 @@
+body{
+    width:33%;
+}
+#res
+{
+   background-color:#D3D3D3 ;
+    border-style:solid;
+    height:48px;
+    font-size:20px;
+}
+.buttonContainer button
+{
+     width:25%;
+    height:36px;
+    font-size:18px;
+    margin:0px;
+    float:left; 
+}
+
+.buttonContainer > .button_column1
+{
+    background-color:#90EE90 ;
+    color:brown;
+}
+.buttonContainer > .button_column2
+{
+    background-color:#006400;
+    color:white;
+   
+}
+.buttonContainer > .button_row2
+{
+    background-color:#000000;
+    color:red;
+}
